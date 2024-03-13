@@ -11,3 +11,7 @@ def categories(request, cat_id):
 
 def categories_by_slug(request, cat_slug):
     return HttpResponse(f'{cat_slug}')
+
+
+def archive(request, year):
+    return HttpResponse(f'{year}')
