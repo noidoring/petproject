@@ -5,5 +5,9 @@ def index(request):
     return HttpResponse('main')
 
 
-def categories(request):
-    return HttpResponse('Categories')
+def categories(request, cat_id):
+    return HttpResponse(f'Categories {cat_id}')
+
+
+def categories_by_slug(request, cat_slug):
+    return HttpResponse(f'{cat_slug}')
