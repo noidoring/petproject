@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
+from django.template.loader import render_to_string
 
 def index(request):
-    return HttpResponse('main')
+    return render(request, 'pets/index.html')
 
 
 def categories(request, cat_id):
