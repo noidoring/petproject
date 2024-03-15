@@ -6,6 +6,10 @@ def index(request):
     return render(request, 'pets/index.html')
 
 
+def about(request):
+    return render(request, 'pets/about.html')
+
+
 def categories(request, cat_id):
     return HttpResponse(f'Categories {cat_id}')
 
