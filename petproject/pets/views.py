@@ -3,7 +3,8 @@ from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.template.loader import render_to_string
 
 def index(request):
-    return render(request, 'pets/index.html')
+    data = {'title': 'Главная страница'}
+    return render(request, 'pets/index.html', data)
 
 
 def about(request):
