@@ -32,3 +32,7 @@ def page_not_found(request, exception):
 
 def addpost(request):
     return HttpResponse('Страница добавления поста')
+
+
+def contact(request):
+    return HttpResponse('Страница для контакта')
