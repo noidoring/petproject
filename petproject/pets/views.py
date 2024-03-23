@@ -36,3 +36,7 @@ def addpost(request):
 
 def contact(request):
     return HttpResponse('Страница для контакта')
+
+
+def some_func(request):
+    return HttpResponse('dfdf')
