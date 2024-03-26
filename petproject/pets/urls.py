@@ -12,4 +12,5 @@ urlpatterns = [
     path('cats/<slug:cat_slug>', views.categories_by_slug),
     path('archive/<year4:year>/', views.archive),
     path('addpost/', views.addpost),
+    path('contact/', views.contact),
 ]
