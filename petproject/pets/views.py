@@ -11,10 +11,6 @@ def about(request):
     return render(request, 'pets/about.html')
 
 
-def categories(request, cat_id):
-    return HttpResponse(f'Categories {cat_id}')
-
-
 def categories_by_slug(request, cat_slug):
     return HttpResponse(f'{cat_slug}')
 
